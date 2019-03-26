@@ -1,8 +1,3 @@
-# from main import playing
-
-# playing = playing
-
-
 class Interface:
     def take_bet(self, chips):
         bet = int(input('What is your bet?'))
@@ -84,5 +79,6 @@ class Interface:
         if answer == 'hit':
             player_hand.add_card(cards.deck.pop())
             player_hand.show_all_cards()
+            return True
         else:
-            playing = False
+            return False

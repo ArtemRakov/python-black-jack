@@ -25,7 +25,7 @@ while True:
         if interface.burst(player_hand):
             break
         else:
-            interface.hit_or_pass(player_hand, chips)
+            playing = interface.hit_or_pass(player_hand, cards)
 
     interface.dealer_take_cards(dealer_hand, cards)
     interface.show_hands_end(player_hand, dealer_hand)
